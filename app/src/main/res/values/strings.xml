@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Notes</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="switch_text">Show archived?</string>
+    <string name="important">Important</string>
+    <string name="content">Content</string>
+    <string name="title">Title</string>
+    <string name="archived">Archived</string>
+    <string name="a">A</string>
+    <string name="d">D</string>
+    <string name="create">Create</string>
+    <string name="search">Search</string>
+</resources>

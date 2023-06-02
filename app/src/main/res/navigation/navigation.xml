@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/navigation"
+            app:startDestination="@id/mainFragment"
+>
+    <fragment android:id="@+id/mainFragment"
+              android:name="ui.notes.noteapp.ui.MainFragment"
+              android:label="main_page"
+              tools:layout="@layout/main_page">
+        <action android:id="@+id/mainToAdd"
+                app:destination="@id/addFragment"/>
+        <action android:id="@+id/mainToEdit"
+                app:destination="@id/editFragment"/>
+    </fragment>
+    <fragment
+            android:id="@+id/addFragment"
+            android:name="ui.notes.noteapp.ui.AddFragment"
+            android:label="add_page"
+            tools:layout="@layout/add_page">
+        <action android:id="@+id/addToMain"
+                app:destination="@id/mainFragment"/>
+    </fragment>
+    <fragment android:id="@+id/editFragment"
+              android:name="ui.notes.noteapp.ui.EditFragment"
+              android:label="edit_page"
+              tools:layout="@layout/edit_page">
+        <action android:id="@+id/editToMain"
+                app:popUpTo="@id/editFragment"
+                app:popUpToInclusive="true" />
+    </fragment>
+
+</navigation>

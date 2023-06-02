@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/editPage"
+>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+    >
+        <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+        >
+            <Switch
+                    android:id="@+id/importantEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/important"
+                    android:layout_centerHorizontal="true"
+                    tools:ignore="UseSwitchCompatOrMaterialXml"/>
+        </RelativeLayout>
+        <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+        >
+            <Switch
+                    android:id="@+id/archiveEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/archived"
+                    android:layout_centerHorizontal="true"
+                    tools:ignore="UseSwitchCompatOrMaterialXml"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <EditText
+            android:id="@+id/titleEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="Title"
+            android:hint="@string/title"
+            android:inputType="text"
+            tools:ignore="LabelFor"
+    />
+    <EditText
+            android:id="@+id/contentEdit"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:autofillHints="Content"
+            android:hint="@string/content"
+            android:gravity="top"
+            tools:ignore="LabelFor"
+            android:inputType="textMultiLine"/>
+
+</LinearLayout>
